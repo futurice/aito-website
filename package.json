@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/futurice/aito-website/issues"
   },
-  "homepage": "https://github.com/futurice/aito-website#readme"
+  "homepage": "https://github.com/futurice/aito-website#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
 }
