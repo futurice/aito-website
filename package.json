@@ -4,7 +4,12 @@
   "description": "This is a first MVP for aito project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-build": "node-sass --output-style nested --indent-type tab -o styles/css styles/scss",
+    "sass-watch": "node-sass --output-style nested --indent-type tab -o styles/css styles/scss -w",
+    "postcss-build": "postcss styles/css/main.css --use autoprefixer -o style.css",
+    "postcss-watch": "postcss styles/css/main.css --use autoprefixer -o style.css -w"
+    //"css-watch": "'npm run sass-build' && 'npm run postcss-watch'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,12 @@
   },
   "homepage": "https://github.com/futurice/aito-website#readme",
   "dependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "postcss-scss": "^1.0.3"
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^2.0.0",
+    "autoprefixer": "^7.2.5",
+    "postcss-cli": "^4.1.1"
   }
 }
