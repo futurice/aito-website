@@ -9,7 +9,6 @@
     "sass-watch": "node-sass --output-style nested --indent-type tab -o styles/css styles/scss -w",
     "postcss-build": "postcss styles/css/main.css --use autoprefixer -o style.css",
     "postcss-watch": "postcss styles/css/main.css --use autoprefixer -o style.css -w"
-    //"css-watch": "'npm run sass-build' && 'npm run postcss-watch'"
   },
   "repository": {
     "type": "git",
