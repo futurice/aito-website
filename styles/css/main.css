@@ -1,1 +1,10 @@
-body{color:red}body p{color:blue}body p span{border:1px solid black}
+@import url("https://fonts.googleapis.com/css?family=Cardo|Radley|Volkhov|Vollkorn:600");
+* {
+		margin: 0;
+		padding: 0; }
+
+h1 {
+		font-family: "Vollkorn", serif; }
+
+h2 {
+		font-family: "Vollkorn", serif; }

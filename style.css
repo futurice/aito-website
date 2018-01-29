@@ -1,3 +1,12 @@
-body{color:red}body p{color:blue}body p span{border:1px solid black}
+@import url("https://fonts.googleapis.com/css?family=Cardo|Radley|Volkhov|Vollkorn:600");
+* {
+		margin: 0;
+		padding: 0; }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy9jc3MvbWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsS0FBSyxTQUFTLENBQUMsT0FBTyxVQUFVLENBQUMsWUFBWSxzQkFBc0IsQ0FBQyIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5e2NvbG9yOnJlZH1ib2R5IHB7Y29sb3I6Ymx1ZX1ib2R5IHAgc3Bhbntib3JkZXI6MXB4IHNvbGlkIGJsYWNrfVxuIl19 */
+h1 {
+		font-family: "Vollkorn", serif; }
+
+h2 {
+		font-family: "Vollkorn", serif; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy9jc3MvbWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEseUZBQXlGO0FBQ3pGO0VBQ0UsVUFBVTtFQUNWLFdBQVcsRUFBRTs7QUFFZjtFQUNFLCtCQUErQixFQUFFOztBQUVuQztFQUNFLCtCQUErQixFQUFFIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PUNhcmRvfFJhZGxleXxWb2xraG92fFZvbGxrb3JuOjYwMFwiKTtcbioge1xuXHRcdG1hcmdpbjogMDtcblx0XHRwYWRkaW5nOiAwOyB9XG5cbmgxIHtcblx0XHRmb250LWZhbWlseTogXCJWb2xsa29yblwiLCBzZXJpZjsgfVxuXG5oMiB7XG5cdFx0Zm9udC1mYW1pbHk6IFwiVm9sbGtvcm5cIiwgc2VyaWY7IH1cbiJdfQ== */
