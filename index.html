@@ -8,12 +8,217 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div class="menu-container" id="menu-container">
+    <div class="menu-wrapper" id="menu-wrapper">
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+   <!-- menu-wrapper -->
+   <ul class="menu-list accordion">
+      <li id="nav1" class="toggle accordion-toggle">
+        <a class="menu-link" href="#about">About</a>
+      </li>
+      <li id="nav2" class="toggle accordion-toggle">
+        <a class="menu-link" href="#">Blogs</a>
+      </li>
+      <li id="nav3" class="toggle accordion-toggle">
+        <a class="menu-link" href="#">Recruitment</a>
+      </li>
+      <li id="nav3" class="toggle accordion-toggle">
+        <a class="menu-link" href="#">Contact</a>
+      </li>
+   </ul>
+  </div>
+  <!-- App container -->
   <div class="aito-app">
     <div class="aito-hero-image">
       <div class="aito-hero-image-text-container">
-        <h2>Intelligent Database - <br/> Saas for growing tech teams</h2>
+        <div class="aito-hero-image-logo">
+          <img src="assets/images/lehtilogo.png">
+        </div>
+        <h2>
+          Effortless way to add AI 
+          <br/> 
+          to your digital functions
+          <br/> 
+          <br/> 
+          Intelligent Database -
+          <br/>
+          SaaS for growing tech businesses
+        </h2>
+        <!-- <button class="aito-read-more">Read More</button> -->
       </div>
     </div>
+
+    <!-- Offer --> 
+    <div class="aito-block">
+      <div class="aito-info-block">
+        <div class="aito-block-image">
+          <div class="offer-image"></div>
+        </div>
+        <div class="aito-info-block-text offer-text">
+          <h3>What we offer</h3>
+          <p>
+            You need to have (some) data and a business you want to improve.
+            <br/>
+            <br/>
+            We provide:
+            <br/>
+            - A home of both AI core technology and database for your data streams
+            <br/>
+            - Easy APIs which allow running interactive queries against the complete live dataset
+            <br/>
+            - All needed infrastructure. Safe, secured, not shared to anyone
+            <br/>
+            - Support to make it all easy: examples, demos, customer support
+          </p>
+        </div>
+      </div>
+      <hr class="special"/>
+    </div>
+
+    <!-- Promises --> 
+    <div class="aito-block" id="about">
+      <div class="aito-info-block"> 
+        <div class="aito-info-block-text about-text">
+          <h3>The promises</h3> 
+          <p>
+            <br/> 
+            - <b><a href="#">Pour your data in fast </a></b>
+            <br/>
+            - <b><a href="#">AI you do not need to teach, it learns </a></b>
+            <br/>
+            - <b><a href="#">Get results in realtime </a></b>
+            <br/>
+            - <b><a href="#">Every coder can use it </a></b>
+            <br/>
+            - <b>Pimp it with your own parts - under development – target later on 2018</b>
+          </p>
+        </div>
+        <div class="aito-block-image">
+          <div class="about-image"></div>
+        </div>
+      </div>
+      <hr class="special"/>
+    </div>
+
+    <!-- Benefits --> 
+    <div class="aito-block" id="about">
+      <div class="aito-info-block">
+        <div class="aito-block-image">
+          <div class="about-image"></div>
+        </div>
+        <div class="aito-info-block-text about-text">
+          <h3>Aito benefits</h3> 
+          <p>
+            - <b>Easy path to enter,</b> a path which continues when you learn and grow.
+            <br/>
+            - <b>Fast intelligence</b> – grounded AI core technology for real world problems.
+            <br/>
+            - <b>Efficient</b> – No need to invest large amounts of money or time 
+          </p>
+        </div>
+      </div>
+      <hr class="special"/>
+    </div>
+
+    <!-- Team --> 
+    <div class="aito-block">
+      <div class="aito-info-block"> 
+        <div class="aito-info-block-text aito-info-fullscreen">
+          <h3>Meet the team</h3>
+          <div class="aito-team-blocks">
+            <div class="aito-team-member">
+              <div></div>
+              <h4 class="">Antti Rauhala</h4>
+              <p>
+                Title of the person
+              </p>
+            </div>
+            <div class="aito-team-member">
+              <div></div>
+              <h4 class="">Antti Rauhala</h4>
+              <p>
+                Title of the person
+              </p>
+            </div>
+            <div class="aito-team-member">
+              <div></div>
+              <h4 class="">Antti Rauhala</h4>
+              <p>
+                Title of the person
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recruitment --> 
+    <div class="aito-block aito-recruitment-background">
+      <div class="aito-info-block ">
+        <div class="aito-recruitment-white-block">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact --> 
+    <div class="aito-block" id="about">
+      <div class="aito-info-block">
+        <div class="aito-block-image">
+          <div class="about-image"></div>
+        </div>
+        <div class="aito-info-block-text about-text">
+          <h3>Aito benefits</h3> 
+          <p>
+            - <b>Easy path to enter,</b> a path which continues when you learn and grow.
+            <br/>
+            - <b>Fast intelligence</b> – grounded AI core technology for real world problems.
+            <br/>
+            - <b>Efficient</b> – No need to invest large amounts of money or time 
+          </p>
+        </div>
+      </div>
+      <hr class="special"/>
+    </div>
   </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      function slideMenu() {
+        var activeState = $("#menu-container .menu-list").hasClass("active");
+        $("#menu-container .menu-list").animate(
+          {
+            right: activeState ? "0%" : "-100%"
+          },
+          400
+        );
+      }
+      $("#menu-wrapper").click(function(event) {
+        event.stopPropagation();
+        $("#hamburger-menu").toggleClass("open");
+        $("#menu-container .menu-list").toggleClass("active");
+        slideMenu();
+
+        $("body").toggleClass("overflow-hidden");
+      });
+
+      $(".menu-link").click(function(){
+        $("#hamburger-menu").toggleClass("open");
+        $("#menu-container .menu-list").toggleClass("active");
+        slideMenu();
+
+        $("body").toggleClass("overflow-hidden");
+      });
+      
+    }); // jQuery load
+
+
+  </script>
 </body>
 </html>
