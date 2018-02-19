@@ -7,13 +7,15 @@ Onlie guides:
 Usig reset: https://www.webpagefx.com/blog/web-design/should-you-reset-your-css/
 
 Centering: https://css-tricks.com/centering-css-complete-guide/
-SASS architecture: https://www.sitepoint.com/architecture-in-sass/
+
+SASS architecture: 
+https://www.sitepoint.com/architecture-in-sass/
 http://matthewelsom.com/blog/simple-scss-playbook.html
 https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization#architecture
 https://medium.com/@elad/css-architecture-for-multiple-websites-with-sass-7e923fc53f7a
 http://matthewelsom.com/blog/simple-scss-playbook.html
 
-For aimatios we might use: 
+For animatios we might use: 
 
 - menu trasitios: https://tympanus.net/Development/SidebarTransitions/
 - lik aimatios https://tympanus.net/Development/CreativeLinkEffects/
