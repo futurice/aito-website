@@ -11,6 +11,22 @@
   display: block;
 
   #loader{
-    background-image: url('../../assets/images/lehtilogo.png');
+    position: relative;
+    height: 100%;
+    width: 100%;
+    img{
+      max-width: 20%;
+      max-height: 20%;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    img.loading-gif{
+      width: 30px;
+      height: 30px;
+      top: 50%;
+    }
   }
 }
