@@ -1,0 +1,31 @@
+.aito-hero-image {
+  width: 100%;
+  width: 100vw;
+  min-height: 600px;
+  max-height: 100vh;
+  height: 100vh;
+  background: #2d5f49;
+  background-image: url('./assets/images/forest_opt.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+  position: relative;
+
+  .aito-hero-image-text-container {
+    width: 70%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .aito-hero-image-logo {
+      margin-bottom: 90px;
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+}
