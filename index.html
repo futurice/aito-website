@@ -25,13 +25,13 @@
           <span></span>
         </div>
       </div>
-     <!-- menu-wrapper -->
-     <ul class="menu-list accordion">
+      <!-- menu-wrapper -->
+      <ul class="menu-list accordion">
         <li id="nav1" class="toggle accordion-toggle">
           <a class="menu-link" href="#about">About</a>
         </li>
         <li id="nav2" class="toggle accordion-toggle">
-          <a class="menu-link" href="#">Blogs</a>
+          <a class="menu-link" href="https://medium.com/@kaiinkinen/startup-life-go-big-or-go-home-14b5f60d0a6d" target="_blank">Blogs</a>
         </li>
         <li id="nav3" class="toggle accordion-toggle">
           <a class="menu-link" href="#recruitment">Recruitment</a>
@@ -39,7 +39,7 @@
         <li id="nav3" class="toggle accordion-toggle">
           <a class="menu-link" href="#contact">Contact</a>
         </li>
-     </ul>
+      </ul>
     </div>
     <!-- App container -->
     <div class="aito-app">
@@ -73,10 +73,10 @@
               <br/>
               3. SaaS with just a few clicks
             </p>
-            <p>
-              exclusive free trials available now
+            <p class="trial">
+              Exclusive free trials available now
               <br/>
-              <button class="aito-sign-up"> Sign up</button>
+              <a class="aito-sign-up" href="#form"> Sign up</a>
             </p>
           </div>
         </div>
@@ -89,14 +89,6 @@
           <div class="aito-info-block-text">
             <h3>The promises</h3> 
             <p>
-              <!-- <br/> 
-              <b> <i class="fas fa-heart"></i> <a href="#"> Pour your data in fast </a></b>
-              <br/>
-              <b> <i class="fas fa-heart"></i>  <a href="#"> AI you do not need to teach, it learns </a></b>
-              <br/>
-              <b> <i class="fas fa-heart"></i>  <a href="#"> Get results in realtime </a></b>
-              <br/>
-              <b> <i class="fas fa-heart"></i>  <a href="#"> Every coder can use it </a></b> -->
               Aito Intelligence Layer is home of AI core technology and your data streams. You get the immediate Smart Functions to your use with easy query APIs which allow running interactive queries against the complete live dataset. 
               <br/>
               We take care of all the needed infrastructure. Your data is safe, secured, not used by anyone else than you. 
@@ -119,17 +111,18 @@
           <div class="aito-info-block-text about-text">
             <h3>Aito benefits</h3> 
             <p class="list">
-              <b> <!-- <i class="fas fa-heart"></i>  --> Easy path to enter,</b> a path which continues when you learn and grow.
+              <b>Easy path to enter,</b> a path which continues when you learn and grow.
               <br/>
-              <b> <!-- <i class="fas fa-heart"></i> -->  Fast intelligence</b> – grounded AI core technology for real world problems.
+              <b>Fast intelligence</b> – grounded AI core technology for real world problems.
               <br/>
-              <b> <!-- <i class="fas fa-heart"></i> -->  Efficient</b> – No need to invest large amounts of money or time 
+              <b>Efficient</b> – No need to invest large amounts of money or time 
             </p>
           </div>
         </div>
         <hr class="special"/>
       </div>
 
+      <!-- Flow -->
       <div class="aito-block">
         <div class="aito-info-block">
           <div class="aito-info-block-text about-text">
@@ -144,7 +137,7 @@
               4. Every coder can use it 
             </p>
           </div>
-          <div class="aito-block-image benefits">
+          <div class="aito-block-image flow">
             <div></div>
           </div>
         </div>
@@ -152,7 +145,7 @@
       </div>
 
       <!-- Team --> 
-      <div class="aito-block">
+      <div class="aito-block aito-team-fullscreen">
         <div class="aito-info-block"> 
           <div class="aito-info-block-text aito-info-fullscreen">
             <h3>Meet the team</h3>
@@ -195,8 +188,9 @@
         </div>
         <hr class="special"/>
       </div>
+
       <!-- Medium posts -->
-      <div class="aito-block">
+<!--       <div class="aito-block">
         <div class="aito-info-block">
           <div class="aito-info-block-text aito-info-fullscreen">
             <h3>Read our blog</h3>
@@ -246,7 +240,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Recruitment --> 
       <div class="aito-block aito-recruitment-background" id="recruitment">
@@ -266,14 +260,14 @@
               <b>
                 Machine learning and software engineering role
               </b> 
-              <a href="#">full description...</a> 
+              <a href="./pages/recruitment1.html">full description...</a> 
               <br/>
               <b>
                 Frontend/Fullstack developer
               </b> 
-              <a href="#">full description...</a> 
+              <a href="./pages/recruitment2.html">full description...</a> 
               <br/>
-              <b>Consultant/sales support with data science background</b> <a href="#">full description...</a> 
+              <b>Consultant/sales support with data science background</b> 
               <br/>
               What should you know about aito when applying? <a href="./pages/about.html">Read here.</a> 
             </p>
@@ -283,16 +277,15 @@
       </div>
 
       <!-- Form  -->
-      <!-- Benefits --> 
-      <div class="aito-block">
+      <div class="aito-block aito-block-form" id="form">
         <div class="aito-info-block">
           <div class="aito-info-block-text">
             <h3>Form</h3> 
-            <form id="form" data-parsley-validate="">
+            <form id="form" data-parsley-validate=""  onSubmit="search();return false;" action="">
               <p>Name</p>
               <input type="text" id="Name" name="Name" value=" " placeholder="Name" data-parsley-maxlength="50"  required="">
               <p>Email</p>
-              <input type="text" id="Email" name="Email" value=" " placeholder="Email" data-parsley-trigger="change" data-parsley-error-message="bad email" required="">
+              <input type="text" id="Email" name="Email" value=" " placeholder="Email" data-parsley-trigger="change" data-parsley-error-message="email is required" required="">
               <p>Company</p>
               <input type="text" id="Company" name="Company" value=" " placeholder="Company">
               <p>Industry</p>
@@ -370,6 +363,7 @@
           
         }); // jQuery load
 
+        // submit form data
         $("#submit_form").click(function(){
           $.ajax({
             method: "POST",
@@ -392,12 +386,11 @@
         //form validation
         $('#form').parsley().on('field:validated', function() { 
           var ok = $('.parsley-error').length === 0;
-          // $('.bs-callout-info').toggleClass('hidden', !ok);
-          // $('.bs-callout-warning').toggleClass('hidden', ok);
-        })
-        .on('form:submit', function() {
-          // return false; // Don't submit form for this demo
-          
+          if($("#Name").val() == '' || $("#Email").val() == '' || $("#ThoughtsRequests").val() == '') {
+            $('#submit_form').prop("disabled",true);
+          } else {
+            $('#submit_form').prop("disabled",false);
+          }
         });
       });
 
