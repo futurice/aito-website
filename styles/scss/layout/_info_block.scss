@@ -49,13 +49,17 @@
 
     .aito-block.aito-team-fullscreen {
       height: auto;
-      min-height: 250vh;
+      min-height: 300vh;
       overflow: visible;
       .aito-info-block {
         overflow: visible;
         height: auto;
         .aito-team-blocks {
           padding: 30px;
+
+          .aito-team-member {
+            width: 100%;
+          }
         }
       }
     }
@@ -71,6 +75,13 @@
 
     .aito-block.aito-block-form {
       height: 120vh;
+    }
+
+    .aito-block.aito-block-form .aito-info-block .aito-info-block-text p{
+      width: 90%;
+    }
+    .aito-block.aito-recruitment-background {
+      height: 150vh;
     }
 }
 
@@ -215,6 +226,12 @@
           font-size: 1.2rem;
         }
 
+        b.capital {
+          font-family: $MAIN_FONT;
+          font-size: 1.5rem;
+          line-height: 3rem;  
+        }
+
         ul{
           padding: 60px;
           padding-top: 30px;
@@ -226,6 +243,10 @@
       p.list {
         line-height: 300%;
         width: 95%;
+      }
+
+      p.list.first{
+        font-size: 1.5rem;
       }
 
       p.trial{
@@ -300,20 +321,25 @@
 
     .aito-info-block-text.aito-recruitment-text{
       background-color: white;
+      p {
+        width: 90%;
+      }
     }
 
     .aito-team-blocks {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       padding: 60px;
       padding-top: 30px;
       padding-left: 90px;
 
       .aito-team-member {
-        width: 100%;
+        width: 30%;
         display: block;
         margin-right: 10px;
+        flex-grow: 1;
 
         div {
           width: 100%;
@@ -330,6 +356,7 @@
 
         div.aito-team-member-antti {
           background-image: url('/assets/images/Antti.jpg');
+          background-position: right;
         }
 
         div.aito-team-member-kai {
@@ -349,6 +376,17 @@
           padding-left: 0px;
         }
       }
+
+      .aito-team-text {
+        width: 100%;
+        display: block;
+        flex-grow: 3;
+        small {
+          width: 100%;
+          margin: 0px;
+          padding-left: 0px;
+        }
+      }
       
     }
   }
@@ -356,10 +394,15 @@
 }
 
 .aito-block.aito-recruitment-background {
+  height: 100vh;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('./assets/images/jeremy-gallman_square_smaller.jpg');
+}
+
+.aito-block.aito-block-form .aito-info-block .aito-info-block-text p{
+  width: 90%;
 }
 
 /* ----------- iPhone 4 and 4S ----------- */

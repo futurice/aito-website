@@ -27,10 +27,11 @@ p {
   font-size: 1rem;
   text-align: left;
   line-height: 1.5rem;
+}
 
-  // maybe?
-  // font-family: 'Muli', sans-serif;
-
+small {
+  font-family: $TEXT_FONT;
+  line-height: 1.5rem;
 }
 
 input, textarea {
