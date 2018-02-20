@@ -27,6 +27,7 @@
   "devDependencies": {
     "@csstools/postcss-sass": "^2.0.0",
     "autoprefixer": "^7.2.5",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "postcss-load-config": "^1.2.0"
   }
 }
