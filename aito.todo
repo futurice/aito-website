@@ -4,17 +4,21 @@ TODO:
   ✔ Add markdown @done (18-02-17 16:21)
   ✘ add medium api integation @cancelled (18-02-17 16:21)
   ✔ Add pre-loading screen @done (18-02-19 12:57)
-  ☐ minify images
-  ☐ minify assets
+  ✔ minify images @done (18-02-20 11:53)
+  ✔ minify assets @done (18-02-20 11:53)
   ☐ add favicon
   ✔ Add form @done (18-02-19 12:57)
   ✔ Add links to job offers @done (18-02-20 10:43)
-  ☐ Add links to Medium posts
+  ✔ Add links to Medium posts @done (18-02-20 11:53)
   ☐ Form validation
-  ☐ Redirect to only minified images
-  ☐ Improve preload css
+  ✔ Redirect to only minified images @done (18-02-20 11:53)
+  ✔ Improve preload css @done (18-02-20 11:53)
   ✔ Create Job page @done (18-02-20 10:43)
   ✔ Add media queries to blocks @done (18-02-20 10:43)
   ☐ Work on form message
   ☐ Add landscape queries
+  ☐ Add postcss minify
+  ☐ Add build repo generated automatically
+  ☐ Add react modules?
+  
 
