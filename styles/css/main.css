@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn:600");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Muli");
 .loader-wrapper {
 		z-index: 60000;
 		position: fixed;
@@ -218,16 +217,6 @@ a {
 		background: #fff !important;
 		opacity: 0; }
 
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone X ----------- */
-/* Portrait and Landscape */
 .aito-hero-image {
 		width: 100%;
 		width: 100vw;
@@ -235,7 +224,7 @@ a {
 		max-height: 100vh;
 		height: 100vh;
 		background: #2d5f49;
-		background-image: url("./assets/images/forest_opt.jpg");
+		background-image: url("./assets/images/compressed/forest-compressed.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: left center;
@@ -298,13 +287,17 @@ a {
 								background-repeat: no-repeat;
 								z-index: 70; }
 				.aito-block .aito-info-block .aito-block-image.offer div {
-						background-image: url("/assets/images/jon-grogan.jpg");
+						background-image: url("/assets/images/compressed/jon-grogan-compressed.jpg");
 						background-size: cover; }
 				.aito-block .aito-info-block .aito-block-image.promises div {
-						background-image: url("./assets/images/wood_detail.jpg");
+						background-image: url("./assets/images/compressed/wood_detail-compressed.jpg");
 						background-size: cover; }
 				.aito-block .aito-info-block .aito-block-image.benefits div {
-						background-image: url("./assets/images/matthew_smith.jpg");
+						background-image: url("./assets/images/compressed/matthew_smith-compressed.jpg");
+						background-position: bottom;
+						background-size: cover; }
+				.aito-block .aito-info-block .aito-block-image.flow div {
+						background-image: url("./assets/images/valeriy-andrushko_mv.jpg");
 						background-position: bottom;
 						background-size: cover; }
 				.aito-block .aito-info-block .aito-block-image.contact div {
@@ -312,7 +305,7 @@ a {
 						background-position: bottom;
 						background-size: cover; }
 				.aito-block .aito-info-block .aito-block-image.form div {
-						background-image: url("./assets/images/tom-barrett-compressed2.jpg");
+						background-image: url("./assets/images/compressed/tom-barrett-compressed2.jpg");
 						background-position: bottom;
 						background-size: cover; }
 				.aito-block .aito-info-block .aito-block-image.aito-recruitment-title {
@@ -351,7 +344,12 @@ a {
 						.aito-block .aito-info-block .aito-info-block-text p.list {
 								line-height: 300%;
 								width: 95%; }
-						.aito-block .aito-info-block .aito-info-block-text button.aito-sign-up {
+						.aito-block .aito-info-block .aito-info-block-text p.trial {
+								padding-top: 30px;
+								font-style: bold; }
+						.aito-block .aito-info-block .aito-info-block-text a.aito-sign-up {
+								display: block;
+								width: 120px;
 								padding: 10px 25px;
 								border: 3px solid black;
 								background: transparent;
@@ -360,7 +358,8 @@ a {
 								text-align: center;
 								margin-top: 30px;
 								line-height: 1rem;
-								font-size: 1rem; }
+								font-size: 1rem;
+								text-decoration: none; }
 						.aito-block .aito-info-block .aito-info-block-text form p {
 								padding: 0px;
 								padding-top: 10px;
@@ -439,6 +438,271 @@ a {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-image: url("./assets/images/jeremy-gallman_square_smaller.jpg"); }
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		.aito-block .aito-info-block {
+				max-height: 95%; }
+		.aito-block .aito-info-block .aito-info-block-text {
+				height: auto;
+				display: block;
+				overflow: hidden;
+				min-height: 300px;
+				width: 100%; }
+				.aito-block .aito-info-block .aito-info-block-text h3 {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 30px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text p {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 0px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text form p, .aito-block .aito-info-block .aito-info-block-text input, .aito-block .aito-info-block .aito-info-block-text textarea {
+						padding-left: 30px;
+						margin-left: 0px; }
+		.aito-block .aito-info-block .aito-info-block-text form input {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-info-block-text form textarea {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-block-image {
+				display: none; }
+		.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text {
+				padding: 30px 30px; }
+				.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text p {
+						margin-bottom: 30px; }
+		.aito-block.aito-team-fullscreen {
+				height: auto;
+				min-height: 250vh;
+				overflow: visible; }
+				.aito-block.aito-team-fullscreen .aito-info-block {
+						overflow: visible;
+						height: auto; }
+						.aito-block.aito-team-fullscreen .aito-info-block .aito-team-blocks {
+								padding: 30px; }
+		.aito-block .aito-info-block .aito-team-blocks {
+				position: relative;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				display: flex;
+				flex-direction: column; }
+		.aito-block.aito-block-form {
+				height: 120vh; } }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+		.aito-block .aito-info-block {
+				max-height: 95%; }
+		.aito-block .aito-info-block .aito-info-block-text {
+				height: auto;
+				display: block;
+				overflow: hidden;
+				min-height: 300px;
+				width: 100%; }
+				.aito-block .aito-info-block .aito-info-block-text h3 {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 30px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text p {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 0px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text form p, .aito-block .aito-info-block .aito-info-block-text input, .aito-block .aito-info-block .aito-info-block-text textarea {
+						padding-left: 30px;
+						margin-left: 0px; }
+		.aito-block .aito-info-block .aito-info-block-text form input {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-info-block-text form textarea {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-block-image {
+				display: none; }
+		.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text {
+				padding: 30px 30px; }
+				.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text p {
+						margin-bottom: 30px; }
+		.aito-block.aito-team-fullscreen {
+				height: auto;
+				min-height: 250vh;
+				overflow: visible; }
+				.aito-block.aito-team-fullscreen .aito-info-block {
+						overflow: visible;
+						height: auto; }
+						.aito-block.aito-team-fullscreen .aito-info-block .aito-team-blocks {
+								padding: 30px; }
+		.aito-block .aito-info-block .aito-team-blocks {
+				position: relative;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				display: flex;
+				flex-direction: column; }
+		.aito-block.aito-block-form {
+				height: 120vh; } }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+		.aito-block .aito-info-block {
+				max-height: 95%; }
+		.aito-block .aito-info-block .aito-info-block-text {
+				height: auto;
+				display: block;
+				overflow: hidden;
+				min-height: 300px;
+				width: 100%; }
+				.aito-block .aito-info-block .aito-info-block-text h3 {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 30px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text p {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 0px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text form p, .aito-block .aito-info-block .aito-info-block-text input, .aito-block .aito-info-block .aito-info-block-text textarea {
+						padding-left: 30px;
+						margin-left: 0px; }
+		.aito-block .aito-info-block .aito-info-block-text form input {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-info-block-text form textarea {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-block-image {
+				display: none; }
+		.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text {
+				padding: 30px 30px; }
+				.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text p {
+						margin-bottom: 30px; }
+		.aito-block.aito-team-fullscreen {
+				height: auto;
+				min-height: 250vh;
+				overflow: visible; }
+				.aito-block.aito-team-fullscreen .aito-info-block {
+						overflow: visible;
+						height: auto; }
+						.aito-block.aito-team-fullscreen .aito-info-block .aito-team-blocks {
+								padding: 30px; }
+		.aito-block .aito-info-block .aito-team-blocks {
+				position: relative;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				display: flex;
+				flex-direction: column; }
+		.aito-block.aito-block-form {
+				height: 120vh; } }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+		.aito-block .aito-info-block {
+				max-height: 95%; }
+		.aito-block .aito-info-block .aito-info-block-text {
+				height: auto;
+				display: block;
+				overflow: hidden;
+				min-height: 300px;
+				width: 100%; }
+				.aito-block .aito-info-block .aito-info-block-text h3 {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 30px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text p {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 0px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text form p, .aito-block .aito-info-block .aito-info-block-text input, .aito-block .aito-info-block .aito-info-block-text textarea {
+						padding-left: 30px;
+						margin-left: 0px; }
+		.aito-block .aito-info-block .aito-info-block-text form input {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-info-block-text form textarea {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-block-image {
+				display: none; }
+		.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text {
+				padding: 30px 30px; }
+				.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text p {
+						margin-bottom: 30px; }
+		.aito-block.aito-team-fullscreen {
+				height: auto;
+				min-height: 250vh;
+				overflow: visible; }
+				.aito-block.aito-team-fullscreen .aito-info-block {
+						overflow: visible;
+						height: auto; }
+						.aito-block.aito-team-fullscreen .aito-info-block .aito-team-blocks {
+								padding: 30px; }
+		.aito-block .aito-info-block .aito-team-blocks {
+				position: relative;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				display: flex;
+				flex-direction: column; }
+		.aito-block.aito-block-form {
+				height: 120vh; } }
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+		.aito-block .aito-info-block {
+				max-height: 95%; }
+		.aito-block .aito-info-block .aito-info-block-text {
+				height: auto;
+				display: block;
+				overflow: hidden;
+				min-height: 300px;
+				width: 100%; }
+				.aito-block .aito-info-block .aito-info-block-text h3 {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 30px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text p {
+						width: 100%;
+						padding: 30px;
+						padding-bottom: 0px;
+						padding-top: 0px; }
+				.aito-block .aito-info-block .aito-info-block-text form p, .aito-block .aito-info-block .aito-info-block-text input, .aito-block .aito-info-block .aito-info-block-text textarea {
+						padding-left: 30px;
+						margin-left: 0px; }
+		.aito-block .aito-info-block .aito-info-block-text form input {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-info-block-text form textarea {
+				margin-left: 30px; }
+		.aito-block .aito-info-block .aito-block-image {
+				display: none; }
+		.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text {
+				padding: 30px 30px; }
+				.aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text p {
+						margin-bottom: 30px; }
+		.aito-block.aito-team-fullscreen {
+				height: auto;
+				min-height: 250vh;
+				overflow: visible; }
+				.aito-block.aito-team-fullscreen .aito-info-block {
+						overflow: visible;
+						height: auto; }
+						.aito-block.aito-team-fullscreen .aito-info-block .aito-team-blocks {
+								padding: 30px; }
+		.aito-block .aito-info-block .aito-team-blocks {
+				position: relative;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				display: flex;
+				flex-direction: column; }
+		.aito-block.aito-block-form {
+				height: 120vh; } }
 
 .aito-app {
 		background-color: white;

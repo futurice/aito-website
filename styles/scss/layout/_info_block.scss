@@ -1,3 +1,81 @@
+@mixin mobile {
+    .aito-block .aito-info-block {
+      max-height: 95%;
+    }
+    .aito-block .aito-info-block .aito-info-block-text {
+      height: auto;
+      display: block;
+      overflow: hidden;
+      min-height: 300px;
+      width: 100%;
+
+      h3 {
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 30px;
+        padding-top: 0px;
+      }
+
+      p {
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+      }
+
+      form p, input, textarea {
+        padding-left: 30px;
+        margin-left: 0px;
+      }
+    }
+
+    .aito-block .aito-info-block .aito-info-block-text form input {
+      margin-left: 30px;
+    }
+
+    .aito-block .aito-info-block .aito-info-block-text form textarea {
+      margin-left: 30px;
+    }
+
+    .aito-block .aito-info-block .aito-block-image {
+      display: none;
+    }
+    .aito-block .aito-info-block .aito-info-block-text.aito-recruitment-text {
+      padding: 30px 30px;
+      p{
+        margin-bottom: 30px;
+      }
+    }
+
+    .aito-block.aito-team-fullscreen {
+      height: auto;
+      min-height: 250vh;
+      overflow: visible;
+      .aito-info-block {
+        overflow: visible;
+        height: auto;
+        .aito-team-blocks {
+          padding: 30px;
+        }
+      }
+    }
+
+    .aito-block .aito-info-block .aito-team-blocks {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .aito-block.aito-block-form {
+      height: 120vh;
+    }
+}
+
+
+
 .aito-block {
   display: block;
   width: 100%;
@@ -53,21 +131,29 @@
 
     .aito-block-image.offer {
       div{
-        background-image: url('/assets/images/jon-grogan.jpg');
+        background-image: url('/assets/images/compressed/jon-grogan-compressed.jpg');
         background-size: cover;
       }
     }
 
     .aito-block-image.promises {
       div{
-        background-image: url('./assets/images/wood_detail.jpg');
+        background-image: url('./assets/images/compressed/wood_detail-compressed.jpg');
         background-size: cover;
       }
     }
 
     .aito-block-image.benefits {
       div{
-        background-image: url('./assets/images/matthew_smith.jpg');
+        background-image: url('./assets/images/compressed/matthew_smith-compressed.jpg');
+        background-position: bottom;
+        background-size: cover;
+      }
+    }
+
+    .aito-block-image.flow {
+      div{
+        background-image: url('./assets/images/valeriy-andrushko_mv.jpg');
         background-position: bottom;
         background-size: cover;
       }
@@ -83,7 +169,7 @@
 
     .aito-block-image.form{
       div{
-        background-image: url('./assets/images/tom-barrett-compressed2.jpg');
+        background-image: url('./assets/images/compressed/tom-barrett-compressed2.jpg');
         background-position: bottom;
         background-size: cover;
       }
@@ -142,7 +228,14 @@
         width: 95%;
       }
 
-      button.aito-sign-up {
+      p.trial{
+        padding-top: 30px;
+        font-style: bold;
+      }
+
+      a.aito-sign-up {
+        display: block;
+        width: 120px;
         padding: 10px 25px;
         border: 3px solid black;
         background: transparent;
@@ -152,6 +245,7 @@
         margin-top: 30px;
         line-height: 1rem;
         font-size: 1rem;
+        text-decoration: none;
       }
 
       form {
@@ -266,4 +360,49 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('./assets/images/jeremy-gallman_square_smaller.jpg');
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    @include mobile;
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) {
+    @include mobile;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) {
+    @include mobile;
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) {
+    @include mobile;
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) { 
+    @include mobile;
 }
