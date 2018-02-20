@@ -5,7 +5,7 @@
     <title>AITO website</title>
     <meta name="description" content="Aito.ai website">
     <meta name="author" content="Futurice, Marharyta Obraztsova">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -65,13 +65,13 @@
             <div></div>
           </div>
           <div class="aito-info-block-text">
-            <h3>What we offer</h3>
-            <p class="list">
-              1. Deploy, operate, and scale
+            <!-- <h3>What we offer</h3> -->
+            <p class="list first">
+              Deploy, operate, and scale
               <br/>
-              2. Aito Intelligence Layer
+              Aito Intelligence Layer
               <br/>
-              3. SaaS with just a few clicks
+              SaaS with just a few clicks
             </p>
             <p class="trial">
               Exclusive free trials available now
@@ -87,9 +87,9 @@
       <div class="aito-block">
         <div class="aito-info-block"> 
           <div class="aito-info-block-text">
-            <h3>The promises</h3> 
+            <!-- <h3>The promises</h3>  -->
             <p>
-              Aito Intelligence Layer is home of AI core technology and your data streams. You get the immediate Smart Functions to your use with easy query APIs which allow running interactive queries against the complete live dataset. 
+              <b>Aito Intelligence Layer</b> is home of AI core technology and your data streams. You get the immediate <b>Smart Functions</b> to your use with easy <b>Query APIs</b> which allow running interactive queries against the complete live dataset. 
               <br/>
               We take care of all the needed infrastructure. Your data is safe, secured, not used by anyone else than you. 
 
@@ -183,10 +183,16 @@
                   </p>
                 </div>
               </div>
+              <div class="aito-team-text">
+                <small>
+                  We want to take AI back to the ground. To fix the real-world problems. Now.
+                  We founders are from Finland where we have a law that you can freely walk in any forest at anytime, pick berries and mushrooms, breathe the fresh forest air.
+                  In the same spirit we want AI to be in the reach of all.
+                </small>
+              </div>
             </div>
           </div>
         </div>
-        <hr class="special"/>
       </div>
 
       <!-- Medium posts -->
@@ -257,17 +263,19 @@
             <p>
               Check below the open positions – we are constantly hiring!
               <br/>
-              <b>
+              <br/>
+              <b class="capital">
                 Machine learning and software engineering role
               </b> 
               <a href="./pages/recruitment1.html">full description...</a> 
               <br/>
-              <b>
+              <b class="capital">
                 Frontend/Fullstack developer
               </b> 
               <a href="./pages/recruitment2.html">full description...</a> 
               <br/>
-              <b>Consultant/sales support with data science background</b> 
+              <b class="capital">Consultant/sales support with data science background</b> 
+              <br/>
               <br/>
               What should you know about aito when applying? <a href="./pages/about.html">Read here.</a> 
             </p>
@@ -280,7 +288,13 @@
       <div class="aito-block aito-block-form" id="form">
         <div class="aito-info-block">
           <div class="aito-info-block-text">
-            <h3>Form</h3> 
+            <h3>Form</h3>
+            <p>
+              Coder? We dare you to leave your contact details and get your access among the first ones to try out the <b>Real-time Intelligence Layer</b>.
+              <br>
+              <br>
+              Other human being? you can leave your feedback and thoughts through the form.
+            </p>
             <form id="form" data-parsley-validate=""  onSubmit="search();return false;" action="">
               <p>Name</p>
               <input type="text" id="Name" name="Name" value=" " placeholder="Name" data-parsley-maxlength="50"  required="">
