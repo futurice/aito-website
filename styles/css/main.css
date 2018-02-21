@@ -463,8 +463,12 @@ a {
 		background-size: cover;
 		background-image: url("./assets/images/jeremy-gallman_square_smaller.jpg"); }
 
+.aito-block.aito-block-form {
+		height: 150vh; }
+
 .aito-block.aito-block-form .aito-info-block .aito-info-block-text p {
-		width: 90%; }
+		width: 90%;
+		padding-bottom: 0px; }
 
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait and Landscape */
