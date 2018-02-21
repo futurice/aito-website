@@ -5,9 +5,10 @@
     <title>AITO website</title>
     <meta name="description" content="Aito.ai website">
     <meta name="author" content="Futurice, Marharyta Obraztsova">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" content="no-cache">
+
+    <link rel="stylesheet" type="text/css" href="style.min.css">
   </head>
   <body>
     <!-- Pre-loader -->
@@ -340,75 +341,6 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
-    <script type="text/javascript">
-      $( window ).on( "load", function() {
-
-        // loader
-        setTimeout(function(){
-          $('#loader-wrapper').hide();
-        }, 1000);
-
-        // menu
-        $(function() {
-          function slideMenu() {
-            var activeState = $("#menu-container .menu-list").hasClass("active");
-            $("#menu-container .menu-list").animate(
-              {
-                right: activeState ? "0%" : "-100%"
-              },
-              400
-            );
-          }
-          $("#menu-wrapper").click(function(event) {
-            event.stopPropagation();
-            $("#hamburger-menu").toggleClass("open");
-            $("#menu-container .menu-list").toggleClass("active");
-            slideMenu();
-
-            $("body").toggleClass("overflow-hidden");
-          });
-
-          $(".menu-link").click(function(){
-            $("#hamburger-menu").toggleClass("open");
-            $("#menu-container .menu-list").toggleClass("active");
-            slideMenu();
-
-            $("body").toggleClass("overflow-hidden");
-          });
-          
-        }); // jQuery load
-
-        // submit form data
-        $("#submit_form").click(function(){
-          $.ajax({
-            method: "POST",
-            url: "https://at3jkc3ps2.execute-api.eu-central-1.amazonaws.com/production/form",
-            data: { 
-              "Name": $("#Name").val(), 
-              "Email": $("#Email").val(),
-              "Company": $("#Company").val(),
-              "Industry": $("#Industry").val(),
-              "Number of employees": $("#NumberOfEmployees").val(),
-              "Thoughts/Requests": $("#ThoughtsRequests").val()
-            }
-          })
-          .done(function( msg ) {
-            alert( "Data Saved: " + msg );
-          });
-        });
-        
-
-        //form validation
-        $('#form').parsley().on('field:validated', function() { 
-          var ok = $('.parsley-error').length === 0;
-          if($("#Name").val() == '' || $("#Email").val() == '' || $("#ThoughtsRequests").val() == '') {
-            $('#submit_form').prop("disabled",true);
-          } else {
-            $('#submit_form').prop("disabled",false);
-          }
-        });
-      });
-
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
   </html>
