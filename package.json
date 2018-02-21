@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass-build": "node-sass --output-style nested --indent-type tab -o styles/css styles/scss",
     "sass-watch": "node-sass --output-style nested --indent-type tab -o styles/css styles/scss -w",
-    "postcss-build": "postcss styles/css/main.css --use autoprefixer -o style.css",
-    "postcss-watch": "postcss styles/css/main.css --use autoprefixer -o style.css -w"
+    "postcss-build": "postcss styles/css/main.css --config postcss.config.js -o style.css",
+    "postcss-watch": "postcss styles/css/main.css --config postcss.config.js -o style.css -w",
+    "build": "postcss style.css -o build/style.min.css -w"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
   "devDependencies": {
     "@csstools/postcss-sass": "^2.0.0",
     "autoprefixer": "^7.2.5",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^3.10.0",
     "postcss-cli": "^4.1.1",
     "postcss-load-config": "^1.2.0"
   }
