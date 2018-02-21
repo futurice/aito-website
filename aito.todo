@@ -14,40 +14,45 @@ TODO:
   ✔ Create Job page @done (18-02-20 10:43)
   ✔ Add media queries to blocks @done (18-02-20 10:43)
   ✔ add no caching meta tag @done (18-02-21 15:40)
+  ✔ Cache controls @done (18-02-21 17:48)
+  ✔ hide overflow on body @done (18-02-21 17:35)
 
-  ☐ Form validation
-  ☐ add favicon - backlog
-  ☐ Work on form message
-  ☐ Add landscape queries
-  ☐ Add postcss minify
-  ☐ Add build repo generated automatically
-  ☐ Add react modules?
-  ☐ implement parallax
-  ☐ Include images in mobile config
-  ☐ Add scroll down button
-  ☐ Add menu icon color change
-  ☐ Add google analytics
-  ☐ Add meni change color on scroll
-  ☐ Add 404 page
-  ☐ Add old browsers not supported
-  ☐ fix :focus property
-  ☐ check html elements for being semantic
-  ☐ use https://pitercss.ru/15/pres/inhuman-ui/#cover for reference
-  ☐ Add https://zellwk.com/blog/why-vertical-rhythms/ vertical rhytms
-  ☐ create design system: https://pitercss.ru/18/pres/design-system/
-  ☐ idea: craete a smart search window thhat is AI powered
-  ☐ medium api integration with nodejs
-  ☐ put website though performance checkers
-  ☐ Fix menu scroll for android browsers
-  ☐ Scroll none for menu
-  ☐ Vertical scrollbar on desktop fix
-  ☐ Menu is not drawn:https://stackoverflow.com/questions/9807620/ipad-safari-scrolling-causes-html-elements-to-disappear-and-reappear-with-a-dela
-  ☐ overflow hidden on body
-  Cache controls
+  Backlog:
+      ☐ add favicon
+      ☐ implement parallax
+  Form:
+    ☐ Form validation
+    ☐ Work on form message
 
-  bugs:
-    ☐ hide overflow on body
+  CSS & Design:
+    ☐ Add landscape queries
+    ☐ Add postcss minify
+    ☐ Add build repo generated automatically
+    ☐ Add scroll down button
+    ☐ Add menu icon color change on scroll
+    ☐ use https://pitercss.ru/15/pres/inhuman-ui/#cover for reference
+    ☐ Add https://zellwk.com/blog/why-vertical-rhythms/ vertical rhytms
+    ☐ create design system: https://pitercss.ru/18/pres/design-system/
+
+  Architecture:
+    ☐ Optimize images even more
+    ☐ Add react modules?
+    ☐ Add google analytics
+    ☐ Add 404 page
+    ☐ Add old browsers not supported
+    ☐ check html elements for being semantic
+    ☐ idea: craete a smart search window thhat is AI powered
+    ☐ medium api integration with nodejs
+    ☐ Menu is not drawn:https://stackoverflow.com/questions/9807620/ipad-safari-scrolling-causes-html-elements-to-disappear-and-reappear-with-a-dela
+
+  Bugs:
     ☐ check weird textarea on menu on Firefox
+    ☐ fix :focus property
+    ☐ Form overflow fix
+    ☐ Fix menu scroll for android browsers
+    ☐ Scroll none for menu on mobile
+    ☐ overflow hidden on body
+    ☐ Increase line height in pages
 
 
 
