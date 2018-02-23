@@ -44,6 +44,7 @@ TODO:
     ☐ idea: craete a smart search window thhat is AI powered
     ☐ medium api integration with nodejs
     ☐ Menu is not drawn:https://stackoverflow.com/questions/9807620/ipad-safari-scrolling-causes-html-elements-to-disappear-and-reappear-with-a-dela
+    ☐ maybe play with main text fonts
 
   Bugs:
     ☐ check weird textarea on menu on Firefox
@@ -53,6 +54,9 @@ TODO:
     ☐ Scroll none for menu on mobile
     ☐ overflow hidden on body
     ☐ Increase line height in pages
+  Features:
+    ☐ Add Grapgh QL demo
+    ☐ Add social medai icons
 
 
 
