@@ -1,11 +1,12 @@
 // webpack v4
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './js/script.js',
   output: {
-    path: path.resolve(__dirname, 'build/js'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'script.min.js'
   },
   module: {
@@ -15,6 +16,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new UglifyJsPlugin()
+    new UglifyJsPlugin(),
+    // new HtmlWebpackPlugin()
   ]
 };
