@@ -25,6 +25,7 @@ TODO:
     ☐ Work on form message
 
   CSS & Design:
+    ☐ Add color for text selection: https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
     ☐ Add landscape queries
     ☐ Add postcss minify
     ☐ Add build repo generated automatically
@@ -56,7 +57,9 @@ TODO:
     ☐ Increase line height in pages
   Features:
     ☐ Add Grapgh QL demo
-    ☐ Add social medai icons
+    ☐ Add social media icons
+    ☐ Add image minification
+    ☐ Webpack 4
 
 
 
