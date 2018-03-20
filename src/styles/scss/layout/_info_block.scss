@@ -142,7 +142,7 @@
 
     .aito-block-image.offer {
       div{
-        background-image: url('/assets/images/compressed/jon-grogan-compressed.jpg');
+        background-image: url('./assets/images/compressed/jon-grogan-compressed.jpg');
         background-size: cover;
       }
     }
@@ -351,16 +351,16 @@
         }
 
         div.aito-team-member-vesku {
-          background-image: url('/assets/images/Vesku.jpg');
+          background-image: url('./assets/images/Vesku.jpg');
         }
 
         div.aito-team-member-antti {
-          background-image: url('/assets/images/Antti.jpg');
+          background-image: url('./assets/images/Antti.jpg');
           background-position: right;
         }
 
         div.aito-team-member-kai {
-          background-image: url('/assets/images/Kai.jpg');
+          background-image: url('./assets/images/Kai.jpg');
         }
 
         h4 {

@@ -1,4 +1,4 @@
-// webpack v4
+// webpack v3
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
