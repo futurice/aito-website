@@ -1,22 +1,23 @@
-// webpack v3
+// webpack v4
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './js/script.js',
+  entry: './src/js/script.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'script.min.js'
   },
   module: {
     rules: [
-      { test: /\.txt$/, 
-        use: 'raw-loader' }
+      { 
+        test: /\.js$/, 
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      }
     ]
   },
   plugins: [
-    new UglifyJsPlugin(),
-    // new HtmlWebpackPlugin()
+    new UglifyJsPlugin()
   ]
 };

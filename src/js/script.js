@@ -1,3 +1,6 @@
+import $ from "jquery";
+import App from "./App";
+
 $( window ).on( "load", function() {
 
   // loader
@@ -36,6 +39,9 @@ $( window ).on( "load", function() {
   }); // jQuery load
 
   // submit form data
+
+  //applicationn logic here
+
   $("#submit_form").click(function(){
     $.ajax({
       method: "POST",
