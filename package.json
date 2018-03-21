@@ -11,7 +11,8 @@
     "postcss-watch": "postcss src/styles/css/main.css --config postcss.config.js -o src/style.css -w",
     "webpack": "webpack",
     "build": "postcss src/style.css -o build/style.min.css -w",
-    "start": "python -m SimpleHTTPServer 8000"
+    "start": "python -m SimpleHTTPServer 8000",
+    "image-magick": "magick mogrify -path build/assets/images/test/ -filter Triangle -define filter:support=2 -thumbnail 1200 -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB build/assets/images/valeriy-andrushko_mv.jpg"
   },
   "repository": {
     "type": "git",
