@@ -1,11 +1,11 @@
 This is a first MVP for aito project.
 Here I will describe the architecture foe the website in static mode:
 
-- README.md
-- app.todo (aito.todo)
-- package.json
-- .gitignore
-- webpack.config.js
+- README.md - done
+- app.todo (aito.todo) - done
+- package.json -done 
+- .gitignore - doe
+- webpack.config.js - do
 - postcss.config.js
 - node_modules/
 - build/
@@ -25,6 +25,23 @@ Here I will describe the architecture foe the website in static mode:
         - scss/*.scss
         - css/style.css
 
+
+For budlig I am usig:
+https://www.sitepoint.com/bundle-static-site-webpack/
+this is a guide for webpack.
+this is specifically for webpack 4
+
+npm i webpack --save-dev
+npm i webpack-cli --save-dev
+
+cofigured the file as in:
+https://www.valentinog.com/blog/webpack-4-tutorial/
+
+I did pm istall jquery to load jquery 
+
+Favicis:
+https://scotch.io/tutorials/all-favicons-for-all-devices-and-sizes
+https://css-tricks.com/favicon-quiz/
 
 
 For styles we are usig sass ad postcss for style compilation.
@@ -55,6 +72,9 @@ Image processing:
         magick mogrify -path OUTPUT_DIRECTORY(TEST/) -filter Triangle -define filter:support=2 -thumbnail OUTPUT_SIZE -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB IPUT_IMAGE
     usually it will be somethin like:
         magick mogrify -path OUTPUT_DIRECTORY(TEST/) -filter Triangle -define filter:support=2 -thumbnail OUTPUT_SIZE -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB IPUT_IMAGE
+ 
+ currently script image-magick does this in a build directory.
+
 
 
 For animatios we might use: 
